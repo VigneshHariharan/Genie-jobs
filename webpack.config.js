@@ -19,7 +19,7 @@ const MiniCss = new MiniCssWebpackPlugin({
 const pages = [{
   path: 'src/pages',
   filename: 'index.html',
-  chunks: ['source']
+  chunks: ['source', 'home']
 },
 {
   path: 'src/pages',
@@ -100,7 +100,9 @@ if(process.env.NODE_ENV === 'production') {
 
 module.exports = {
   mode: "development",
-  entry: { source: "./src/pages/index.js", auth: "./src/pages/auth.js" },
+  entry: { source: "./src/pages/index.js", auth: "./src/pages/auth.js",
+home:'./src/js/home'
+},
   // entry: entries,
   module:{
       rules,

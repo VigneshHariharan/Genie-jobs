@@ -27,16 +27,28 @@ h1,h2,h3, h4,h5, h6, p, label {
 }
 
 .container {
-    width: 60%; 
+    width: 93%; 
     margin: 0 auto; 
+    padding-top: 24px;
 }
 
 .navbar {
     display: flex;
     flex: 1;
     height: 60px;
-    border-bottom: 1px solid var(--color-4);
+    border-bottom: 1px solid var(--color-1);
     padding-left: 16px;
     align-items: center;
 }
 
+#jobListing {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 0 3%;
+}
+.jobElem {
+    border: 1px solid var(--color-1);
+    padding: 8px 16px;
+    border-radius: 4px;
+}

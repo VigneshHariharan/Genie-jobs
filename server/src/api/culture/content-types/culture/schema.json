@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cultures",
+  "info": {
+    "singularName": "culture",
+    "pluralName": "cultures",
+    "displayName": "culture"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "companies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::company.company",
+      "mappedBy": "cultures"
+    }
+  }
+}
