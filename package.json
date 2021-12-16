@@ -7,7 +7,8 @@
   "author": "VigneshHariharan <phvigneshariharan@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start":"webpack serve",
+    "start":"strapi start",
+    "serve:frontend":"webpack server",
     "strapi:serve":"strapi start"
   },
   "dependencies": {
